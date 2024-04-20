@@ -1,0 +1,137 @@
+ABSTRACT
+
+This is a code written by Ritesh Dhiman(211138), Nittish Sharma(211139) and Manas Tiwari(211165) to create a task manager. The program includes different classes and functions to manage tasks with different properties. The program starts by defining a struct named "Task", which is used to define a task with various properties such as name, priority, burst time, memory usage, CPU usage, completion status, whether it is a program or not, duration, and network usage.
+
+The program also defines a doubly linked list node class named "Node". The class has a Task object to hold the task data, as well as two pointers, one to the next node in the list (next) and another to the previous node (prev). The constructor initializes the node's task and sets the next and prev pointers to nullptr. The doubly linked list class named "DoublyLinkedList" is also defined, which holds the nodes of the doubly linked list.
+
+The task manager base class named "TaskManagerBase" is also defined, which has a pure virtual function named "run". The class is used as the base class for the task manager class. A task manager exception class named "TaskManagerException" is also defined, which is used to handle exceptions in the task manager.
+
+The program also includes two functions, sortTasks and modifyTask. The sortTasks function is a template function that takes a comparison function object as an argument and sorts the vector of tasks according to the comparison function object. The modifyTask function is a template function that takes a modification function object as an argument and modifies the task with the given name according to the modification function object.
+
+The task manager class named "TaskManager" is defined, which is derived from the task manager base class. The task manager class has functions to add a task, display the task list, sort the task list, modify a task, remove a task, and exit the task manager. The addTask function is used to add a task to the list of tasks. The function asks for various details of the task, such as name, priority, burst time, memory usage, CPU usage, duration, and network usage, and creates a new task object with these details and adds it to the list of tasks.
+
+The displayNodes function is used to display the list of tasks. The function iterates over the doubly linked list and displays each task's name, priority, burst time, memory usage, CPU usage, and completion status. The function also calculates the total network usage of all tasks and displays it at the end.
+
+The run function of the task manager class is used to execute different operations of the task manager. The function creates an infinite loop until the user selects the exit option. The user is provided with different options to choose from. The user can add a task, display the task list, sort the task list, modify a task, remove a task, or exit the task manager. If the user selects the sort option, the function asks for the sorting criteria, such as priority or burst time, and sorts the task list accordingly. If the user selects the modify option, the function asks for the task name and modification details and modifies the task with the given name. If the user selects the remove option, the function asks for the task name and removes the task with the given name.
+
+
+
+
+............................................................................................................................................................................................
+
+
+Software Requirements Specification (SRS) for Task Manager Program
+
+Introduction
+This Task Manager Program is a software application developed to manage tasks with different properties such as name, priority, burst time, memory usage, CPU usage, completion status, whether it is a program or not, duration, and network usage. The program is developed by Ritesh Dhiman(211138), Nittish Sharma(211139) and Manas Tiwari(211165) using C++ programming language.
+
+Purpose
+The purpose of this document is to provide a detailed description of the Task Manager Program, including its functional requirements, non-functional requirements, and system constraints. This document serves as a reference for developers, testers, and users of the program.
+
+Scope
+The Task Manager Program allows users to add, display, sort, modify, and remove tasks. The program supports tasks with various properties such as name, priority, burst time, memory usage, CPU usage, completion status, whether it is a program or not, duration, and network usage. The program also calculates the total network usage of all tasks.
+
+Functional Requirements
+4.1 Add a Task
+The program allows users to add a new task to the list of tasks. The user must provide details of the task such as name, priority, burst time, memory usage, CPU usage, duration, and network usage. The program creates a new task object with these details and adds it to the list of tasks.
+
+4.2 Display Task List
+The program allows users to display the list of tasks. The program iterates over the list of tasks and displays each task's name, priority, burst time, memory usage, CPU usage, and completion status. The program also calculates the total network usage of all tasks and displays it at the end.
+
+4.3 Sort Task List
+The program allows users to sort the list of tasks based on the sorting criteria such as priority or burst time. The program asks for the sorting criteria and sorts the task list accordingly.
+
+4.4 Modify Task
+The program allows users to modify a task with the given name. The user must provide the task name and modification details. The program modifies the task with the given name based on the modification details.
+
+4.5 Remove Task
+The program allows users to remove a task with the given name. The user must provide the task name, and the program removes the task with the given name from the list of tasks.
+
+Non-Functional Requirements
+5.1 Usability
+The program must be easy to use, and the user interface must be intuitive.
+5.2 Reliability
+The program must be reliable and free from errors. The program must handle exceptions gracefully.
+
+5.3 Performance
+The program must be efficient and must not consume excessive resources.
+
+5.4 Portability
+The program must be portable and must work on different platforms.
+
+System Constraints
+6.1 Hardware Requirements
+The program requires a computer with a minimum of 1 GHz processor, 512 MB RAM, and 100 MB free disk space.
+6.2 Software Requirements
+The program requires a computer with Windows, Linux, or macOS operating system. The program also requires the installation of a C++ compiler and standard libraries.
+
+Conclusion
+The Task Manager Program is a software application developed to manage tasks with different properties. The program allows users to add, display, sort, modify, and remove tasks. The program is efficient, reliable, and easy to use. The program works on different platforms and requires a minimum of hardware and software resources.
+
+............................................................................................................................................................................................
+
+
+
+KEY LEARNING
+
+
+
+The above project provides a good example of how to implement a task manager using various data structures and classes in C++. Here are some key learnings from this project:
+
+1. Structs can be used to define custom data types with multiple properties.
+2. Doubly linked lists can be used to store and manage multiple nodes with different properties.
+3. Base classes and virtual functions can be used to implement inheritance and polymorphism in C++.
+4. Template functions can be used to perform generic operations on different data types.
+5. Exception handling can be used to handle errors and exceptions in a program.
+6. The use of functions such as addTask, displayNodes, sortTasks, modifyTask, removeTask, and run to perform various operations on the data structures and classes used in the program.
+7. The importance of providing a user-friendly interface and menu-driven options to interact with the program.
+8. The project utilizes object-oriented programming principles, such as defining classes and inheritance, to create a task manager program.
+9. The project uses a doubly linked list data structure to store and manage the tasks.
+10. The project demonstrates the use of templates to create generic functions that can be used with different types of objects.
+11. The project showcases exception handling techniques to handle errors and unexpected behavior in the task manager.
+12. The project emphasizes the importance of user interaction and input validation to create a user-friendly interface and prevent errors in the program.
+13. The project highlights the significance of data management and manipulation in a task manager, such as sorting, modifying, and removing tasks based on various criteria.
+14. The project shows how to calculate and display metrics such as network usage and task completion status.
+15. The project emphasizes the significance of planning and organizing a project before implementation to ensure efficient and effective development.
+
+
+
+
+
+............................................................................................................................................................................................
+LIMITATION 
+// Only able to access Batch file not other exe file
+1. Code not optimized properly.
+2. Simulating the network usage , CPU usage and memory usage due to lack of data. ( pth.h, wlan library are such example which are not suporrted in mingw)
+Here are some limitations in the current implementation of the program:
+3. The program does not provide error handling for invalid input. For example, if the user enters a non-integer value for a field that expects an integer value, the program may crash or provide unexpected behavior.
+4. The program does not have a way to save the list of tasks between program runs. Therefore, if the program is closed, all the tasks will be lost.
+5. The program only sorts the tasks in memory, and it does not write the sorted list to a file. Therefore, if the program is closed, the sorted order of the tasks will be lost.
+6. The program uses the system() function to launch external programs, which can be a security risk if the user enters a malicious program name as a task.
+7. The program does not have a way to track the actual execution time of a task. It only records the task's duration in minutes, which can be inaccurate if the task is interrupted or if the system is busy.
+8. The program does not have a way to monitor the system's resource usage (e.g., CPU usage, memory usage) while running a task, which can lead to performance issues if a task uses too many resources.
+9. The program does not provide a way to pause or cancel a running task, which can be problematic if the user needs to stop a task for any reason.
+
+
+
+
+
+............................................................................................................................................................................................
+
+FUTURE SCOPE
+
+1. Improve the task scheduler: The current implementation of the task scheduler is very basic and does not consider important factors such as deadlines, concurrency, and fairness. In the    future, the scheduler can be improved to better handle these aspects and provide more efficient and effective scheduling.
+
+2. Add support for multiple task managers: The code is currently designed to handle only one task manager. However, it can be extended to support multiple task managers that can run on different threads or even on different machines.
+
+3. Improve error handling: The code currently has limited error handling capabilities. In the future, it can be improved to provide more informative error messages and handle a wider range of error scenarios.
+
+4. Implement better user interfaces: The current user interface is simple and text-based. In the future, it can be improved to provide a more user-friendly and visually appealing interface using GUI frameworks like Qt or wxWidgets.
+
+5. Implement more task management features: The code currently supports adding, modifying, and sorting tasks. In the future, more features can be added such as filtering tasks based on certain criteria, viewing task logs, and generating reports.
+
+6. Add support for remote task management: The code can be extended to support remote task management, allowing users to manage their tasks from anywhere in the world using web or mobile applications.
+
+8.Add support for cloud task management: The code can be extended to support cloud-based task management, allowing users to store their tasks and data in the cloud and access them from anywhere using any device.
+
+

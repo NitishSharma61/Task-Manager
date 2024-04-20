@@ -1,0 +1,33 @@
+DATED - 9/6/23
+
+Have I W_News - NO  (-1)   
+Have I P_NCC - NO   (-1)
+Have I P_CDS - NO   (-1)
+Have I spend 1 hr more on S_Media - YES   (-1)
+Have I watched anime more than 1 hr - YES (-1)
+Have I MB - YES (-1)
+Have I pDSA - NO (-1)
+Have I exercised - NO (-1)
+Have I read the book - YES (+1)
+Have I maintained report - YES (+1)
+
+total : -6
+
+
+DATED - 10/6/23
+
+Have I W_News - NO  (-1)   
+Have I P_NCC - NO   (-1)
+Have I P_CDS - Yes   (+1)
+Have I spend 1 hr more on S_Media - YES   (-1)
+Have I watched anime more than 1 hr - YES (-1)
+Have I MB - No (+1)
+Have I pDSA - NO (-1)
+Have I exercised - NO (-1)
+Have I read the book - YES (+1)
+Have I maintained report - No (-1)
+
+total : -4
+
+DATED - 11/6/23
+-1-1-1-1-1-1-1-1-1-1 = -10
